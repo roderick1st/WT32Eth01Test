@@ -7,7 +7,9 @@
 
 
 GlobalVariables myGlobalVariables;
+StoredPacket storedPacket[def_numberOfStoredPakets];
 ESPNOWData MyEspNowData;
+ESPNOWMessage espNOWMessage;
 esp_now_peer_info_t peerInfo;
 IMUData myIMUData[100];
 AsyncUDP udpHandler;
@@ -27,12 +29,7 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  //IPAddress myIp = ETH.localIP();
   
-  //Serial.println(ETH.localIP());
-  //delay(500);
-
-  Clock_Tick();
+    Clock_Tick();
 
 }

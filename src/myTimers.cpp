@@ -8,13 +8,19 @@ void Clock_Tick(){
 
     if((myGlobalVariables.currentTime - myGlobalVariables.previousTime) >= 10){ //1/100th of a second
         
+        myGlobalVariables.SystemTime++; //increment the system time to keep up with the other units
         myGlobalVariables.previousTime = myGlobalVariables.currentTime;
-        hundredthSecond();
+
+        //Serial.println("Tick Tock?");
+
+        //CheckForNewNtripPacket();
+        
 
     }
 
 }
 
+/*
 void hundredthSecond(){
     
     myGlobalVariables.hundredthSecond++;
@@ -59,5 +65,5 @@ void RefreshTimeOverNetwork(){
    
 
 }
-
+*/
 

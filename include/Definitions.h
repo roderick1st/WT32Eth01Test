@@ -10,7 +10,11 @@
 #define ETH_MDIO_PIN    18                  // Pin# of the I²C IO signal for the Ethernet PHY
 
 #define def_LengthOfPandaString 100
+#define def_LengthOfNtripString 128
 #define def_NtripPort 2233
+#define def_ntripPacketHeaderLen 10
+#define def_numberOfStoredPakets 16
+#define def_maxDataSizeOfStoredPacket 256
 
 
 
